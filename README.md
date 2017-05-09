@@ -3,6 +3,8 @@ timepicker
 v 0.0.1
 
 //how to inject
+
+
 import { TimepickerComponent } from './timepicker/timepicker.component';
 
 @NgModule({
@@ -12,5 +14,7 @@ import { TimepickerComponent } from './timepicker/timepicker.component';
   ...
 })
 
-//how to use
+//how to use 
+
+
 <app-timepicker (modelChanges)="timeModel = $event" [appModel] = "timeModel" [(config)] = "timeConfig"></app-timepicker>
