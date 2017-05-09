@@ -1,0 +1,113 @@
+.timepicker-hour{
+    width: 200px;
+}
+.timepicker-hour li{
+    float: left;
+}
+.eui-input-group {
+    position: relative;
+    width: 100%;
+    border-spacing: 0;
+    display: table;
+    border-collapse: separate;
+}
+.eui-input-group .eui-form-control {
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+}
+.eui-form-control {
+    display: block;
+    width: 100%;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #55595c;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: .25rem;
+}
+.eui-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    /*display: none;*/
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 1rem;
+    color: #373a3c;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: .25rem;
+}
+.input-timepicker .timepicker {
+    width: 307px;
+    padding: 5px 0;
+    color: #666;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.input-timepicker .title {
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #ddd;
+    height: 24px;
+}
+.input-timepicker ul {
+    float: left;
+    list-style: none;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.input-timepicker .timepicker-hour {
+    width: 73px;
+    padding: 0 10px 0 10px;
+    border-right: 1px solid #ddd;
+}
+.input-timepicker ul li {
+    width: 27.8%;
+    margin: 1px 1.25%;
+    line-height: 20px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 60% 60%;
+    border: 1px solid transparent;
+    font-size: 12px;
+}
+.input-timepicker ul li.active{
+    border: 1px solid #03a9f4;
+    color: #03a9f4;
+}
+.input-timepicker .timepicker-minute {
+    width: 192px;
+    padding: 0 10px 0 10px;
+}
+.input-timepicker .timepicker-minute li {
+    width: 9.5%;
+    margin: 1px .5%;
+}
+.eui-clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.input-timepicker .success {
+    text-align: center;
+    font-size: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    clear: both;
+    border-top: 1px solid #ddd;
+    cursor: pointer;
+}
