@@ -1,0 +1,16 @@
+<div class="eui-clearfix input-timepicker eui-input-group eui-dropdown open">
+  <input type="text" (focus)="isOpen = true;" (blur)="inputBlur()" [(ngModel)] = "timeModel" class="eui-form-control eui-dropdown-toggle" />
+  <div *ngIf = "isOpen" class="eui-clearfix timepicker eui-dropdown-menu">
+    <div class="title eui-text-primary" >{{timeModel}}</div>
+    <ul class="timepicker-hour">
+      <li *ngFor="let value of hour" [ngClass]="{active:value == hourModel}" (click)="choiceHour(value)">{{value}}</li>
+    </ul>
+    <ul class="timepicker-minute">
+      <li *ngFor="let value of time" [ngClass]="{active:value == minuteModel}" (click)="choiceMinute(value)">{{value}}</li>
+    </ul>
+    <div class="success" (click)="isOpen = false;">完成</div>
+  </div>
+  <!--<span ng-style="style.icon" class="eui-input-group-addon" style="border-left:0;padding:0 0.75rem;">
+			<i class="icon-time-picker eui-icon" style="font-size:14px;"></i>
+		</span>-->
+</div>
